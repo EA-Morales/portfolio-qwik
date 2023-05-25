@@ -2,6 +2,31 @@
  * Tailwind CSS imports
  * View the full documentation at https://tailwindcss.com
  */
+
+ @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Nanum+Pen+Script&display=swap");
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+      font-family: Karla, system-ui, sans-serif;
+    }
+  
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  
+    textarea {
+      resize: none;
+    }
+  }

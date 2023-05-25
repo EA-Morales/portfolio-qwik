@@ -1,3 +1,4 @@
+import { Hero } from "./index";
 import "./styles/global.css";
 
 export default () => {
@@ -8,7 +9,7 @@ export default () => {
         <title>Qwik Blank App</title>
       </head>
       <body class='container mx-auto px-4 lg:px-20'>
-        <h1>hola mundo</h1>
+        <Hero />
       </body>
     </>
   );
