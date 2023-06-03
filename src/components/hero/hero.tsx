@@ -1,4 +1,6 @@
 import { component$ } from "@builder.io/qwik";
+import { MdiChevronDown } from "../icons/chevronDown";
+
 import avatar from "../../assets/images/avatar.png";
 
 export const Hero = component$(() => {
@@ -30,6 +32,7 @@ export const Hero = component$(() => {
           />
         </div>
       </div>
+      <MdiChevronDown class='text-primaryaccent absolute bottom-0 left-1/2 h-8 w-8 animate-bounce' />
     </div>
   );
 });
