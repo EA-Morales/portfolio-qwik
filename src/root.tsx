@@ -1,4 +1,4 @@
-import { Projects } from "./components/projects/projects";
+// import { Projects } from "./components/projects/projects";
 import { Hero } from "./index";
 import "./styles/global.css";
 
@@ -7,11 +7,10 @@ export default () => {
     <>
       <head>
         <meta charSet='utf-8' />
-        <title>Qwik Blank App</title>
+        <title>Agustin Morales Portfolio</title>
       </head>
-      <body class='container mx-auto px-4 lg:px-20'>
+      <body class='mx-auto px-4'>
         <Hero />
-        <Projects />
       </body>
     </>
   );
