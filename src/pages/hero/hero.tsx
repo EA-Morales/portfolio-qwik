@@ -1,16 +1,17 @@
 import { component$ } from "@builder.io/qwik";
-import { MdiChevronDown } from "../icons/chevronDown";
 
 import avatar from "../../assets/images/avatar.png";
-import { MdiLinkedin } from "../icons/linkedin";
-import { MdiGithubBox } from "../icons/github";
-import { IcBaselineDiscord } from "../icons/discord";
-import { MdiEmail } from "../icons/mail";
+
+import { MdiChevronDown } from "../../components/icons/chevronDown";
+import { MdiLinkedin } from "../../components/icons/linkedin";
+import { MdiGithubBox } from "../../components/icons/github";
+import { IcBaselineDiscord } from "../../components/icons/discord";
+import { MdiEmail } from "../../components/icons/mail";
 
 export const Hero = component$(() => {
   return (
     <div class='relative min-h-[99vh] pt-14'>
-      <div class='grid grid-cols-1 justify-items-center gap-8'>
+      <div class='grid grid-cols-1 gap-4'>
         <div class='flex flex-col gap-4'>
           <h1 class='text-primary shadow-primaryaccent drop-shadow-3xl mb-2 max-w-[200px] text-3xl font-bold sm:max-w-none'>
             Hello i'm Agustin 👋🏻
@@ -30,7 +31,13 @@ export const Hero = component$(() => {
           <IcBaselineDiscord class='text-primary h-8 w-8' />
           <MdiEmail class='text-primary h-8 w-8' />
         </div>
-        <img src={avatar} height={150} width={150} alt='' />
+        <img
+          class='mx-auto mt-2'
+          src={avatar}
+          height={150}
+          width={150}
+          alt='Avatar'
+        />
       </div>
       <MdiChevronDown class='text-primaryaccent absolute bottom-0 left-32 h-8 w-8 animate-bounce' />
     </div>
